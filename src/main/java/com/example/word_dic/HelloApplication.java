@@ -20,7 +20,7 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 
-        
+
         root=new Group();
         stage.setTitle("Word Dictionary");
 
@@ -42,5 +42,6 @@ public class HelloApplication extends Application {
 
     public static void main(String[] args) {
         launch();
+
     }
 }
