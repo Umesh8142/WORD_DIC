@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.word_dic.Controller"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+<!--        <ImageView-->
+
+<!--                fitHeight="5.0"-->
+<!--                fitWidth="5.0"-->
+<!--                layoutX="280.0"-->
+<!--                layoutY="160"-->
+
+
+
+<!--        >-->
+<!--            <image>-->
+<!--                <Image-->
+<!--                        url=""-->
+<!--                />-->
+<!--            </image>-->
+
+<!--        </ImageView>-->
+
+
+
+        <ImageView
+                fx:id="imageView"
+                fitHeight="250.0"
+                fitWidth="300.0"
+                layoutX="100.0"
+                layoutY="-50"
+
+
+
+        >
+            <image>
+                <Image
+                        url="@../../../download.png"
+                />
+            </image>
+
+        </ImageView>
+
+        <Text  layoutX="80" layoutY="150" >Search a word</Text>
+        <TextField fx:id="Search1" layoutY="160" layoutX="80" minHeight="30" minWidth="100" promptText="search"></TextField>
+        <Button  text="Search " layoutX="300" layoutY="160"  onMouseClicked="#searchButton"></Button>
+        <Text layoutX="80" layoutY="240" >Add a new word</Text>
+        <TextField fx:id="newWord" layoutY="250" layoutX="80" minHeight="30" minWidth="100" promptText="add a new word "></TextField>
+        <TextField  fx:id="meaning" layoutY="300" layoutX="80" minHeight="30" minWidth="100" promptText="meaning"></TextField>
+       <Button text="Add Word "  layoutX="300" layoutY="280" onMouseClicked="#Add" ></Button>
+        <Text layoutX="80" layoutY="370" >Find meaning</Text>
+        <Button text="Find meaning " layoutX="300" layoutY="380" onMouseClicked="#Meaning" ></Button>
+        <TextField fx:id="find" layoutY="380" layoutX="80" minHeight="30" minWidth="100" promptText="Find Meaning"></TextField>
+    </children>
+
+</AnchorPane>
